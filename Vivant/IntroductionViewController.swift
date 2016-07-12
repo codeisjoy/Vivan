@@ -13,7 +13,11 @@ final class IntroductionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
+    override func shouldAutorotate() -> Bool {
+        return false
+    }
+    
 }
 
 // MARK: - IntroductionPageViewController Class

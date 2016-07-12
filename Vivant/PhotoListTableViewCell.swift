@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhotoListTableViewCell: UITableViewCell {
+final class PhotoListTableViewCell: UITableViewCell {
     
     @IBOutlet var photoView: UIImageView?
     @IBOutlet var numberOfLikesLabel: UILabel?
@@ -24,8 +24,9 @@ class PhotoListTableViewCell: UITableViewCell {
     private func loadPhoto() {
         photoView?.contentMode = .Center
         photoView?.image = UIImage(named: "Image")
-        
+        // Cancel the current task to kill the previous download job
         downloadTask?.cancel()
+        // Start loading new assign photo and display it
         downloadTask = network.getPhoto(photo) { [weak self] image, error in
             dispatch_async(dispatch_get_main_queue()) {
                 self?.photoView?.contentMode = .ScaleAspectFill
@@ -34,6 +35,9 @@ class PhotoListTableViewCell: UITableViewCell {
         }
     }
 }
+
+// MARK: - DashedLabel Class
+// MARK: -
 
 final class DashedLabel: UILabel {
     

@@ -30,6 +30,10 @@ class LoginViewController: UIViewController {
                 object: nil)
     }
     
+    override func shouldAutorotate() -> Bool {
+        return false
+    }
+    
     // MARK: - Actions
     
     @IBAction func logIn() {

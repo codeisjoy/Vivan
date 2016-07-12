@@ -18,6 +18,7 @@
 		045C22351D346A1700687511 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C22341D346A1700687511 /* LoginViewController.swift */; };
 		045C22371D34AD1B00687511 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C22361D34AD1B00687511 /* Post.swift */; };
 		045C22391D34C63F00687511 /* PhotoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C22381D34C63F00687511 /* PhotoListTableViewCell.swift */; };
+		045C223B1D34F59200687511 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C223A1D34F59200687511 /* PhotoDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		045C22341D346A1700687511 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		045C22361D34AD1B00687511 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		045C22381D34C63F00687511 /* PhotoListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListTableViewCell.swift; sourceTree = "<group>"; };
+		045C223A1D34F59200687511 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,10 +90,11 @@
 			isa = PBXGroup;
 			children = (
 				045C22101D344EE900687511 /* AppDelegate.swift */,
+				045C22301D344F9700687511 /* IntroductionViewController.swift */,
+				045C22341D346A1700687511 /* LoginViewController.swift */,
 				045C22121D344EE900687511 /* PhotoListViewController.swift */,
 				045C22381D34C63F00687511 /* PhotoListTableViewCell.swift */,
-				045C22341D346A1700687511 /* LoginViewController.swift */,
-				045C22301D344F9700687511 /* IntroductionViewController.swift */,
+				045C223A1D34F59200687511 /* PhotoDetailViewController.swift */,
 				045C22321D34503E00687511 /* SegueIdentifier.swift */,
 				045C22361D34AD1B00687511 /* Post.swift */,
 				045C22141D344EE900687511 /* Main.storyboard */,
@@ -218,6 +221,7 @@
 				045C22391D34C63F00687511 /* PhotoListTableViewCell.swift in Sources */,
 				045C22371D34AD1B00687511 /* Post.swift in Sources */,
 				045C22351D346A1700687511 /* LoginViewController.swift in Sources */,
+				045C223B1D34F59200687511 /* PhotoDetailViewController.swift in Sources */,
 				045C22111D344EE900687511 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

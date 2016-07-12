@@ -34,11 +34,21 @@ final class PhotoListViewController: UITableViewController {
             performSegueWithIdentifier(SegueIdentifier.PresentIntroduction.rawValue, sender: self)
         }
         // Otherwise, fetch the posts from server and move on.
-        else {
+        else if posts == nil {
             fetchPosts()
         }
     }
-
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        super.prepareForSegue(segue, sender: sender)
+        
+        if let destination = segue.destinationViewController as? PhotoDetailViewController,
+            selectedIndex = tableView.indexPathForSelectedRow?.section
+        {
+            destination.post = posts?[selectedIndex]
+        }
+    }
+    
     // MARK: - Private Methods
     
     @objc private func fetchPosts() {
