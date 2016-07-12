@@ -15,6 +15,7 @@
 		045C22261D344EE900687511 /* VivantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C22251D344EE900687511 /* VivantTests.swift */; };
 		045C22311D344F9700687511 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C22301D344F9700687511 /* IntroductionViewController.swift */; };
 		045C22331D34503E00687511 /* SegueIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C22321D34503E00687511 /* SegueIdentifier.swift */; };
+		045C22351D346A1700687511 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C22341D346A1700687511 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		045C22271D344EE900687511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		045C22301D344F9700687511 /* IntroductionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		045C22321D34503E00687511 /* SegueIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueIdentifier.swift; sourceTree = "<group>"; };
+		045C22341D346A1700687511 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				045C22101D344EE900687511 /* AppDelegate.swift */,
 				045C22121D344EE900687511 /* PhotoListViewController.swift */,
+				045C22341D346A1700687511 /* LoginViewController.swift */,
 				045C22301D344F9700687511 /* IntroductionViewController.swift */,
 				045C22321D34503E00687511 /* SegueIdentifier.swift */,
 				045C22141D344EE900687511 /* Main.storyboard */,
@@ -206,6 +209,7 @@
 				045C22331D34503E00687511 /* SegueIdentifier.swift in Sources */,
 				045C22131D344EE900687511 /* PhotoListViewController.swift in Sources */,
 				045C22311D344F9700687511 /* IntroductionViewController.swift in Sources */,
+				045C22351D346A1700687511 /* LoginViewController.swift in Sources */,
 				045C22111D344EE900687511 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

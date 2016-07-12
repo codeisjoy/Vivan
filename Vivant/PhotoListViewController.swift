@@ -16,7 +16,11 @@ class PhotoListViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        performSegueWithIdentifier(SegueIdentifier.PresentIntroduction.rawValue, sender: self)
+        
+        let ud = NSUserDefaults.standardUserDefaults()
+        if ud.boolForKey(UserHasLoggedIn) != true {
+            performSegueWithIdentifier(SegueIdentifier.PresentIntroduction.rawValue, sender: self)
+        }
     }
     
     override func didReceiveMemoryWarning() {

@@ -10,16 +10,14 @@ import UIKit
 
 final class IntroductionViewController: UIViewController {
     
-    @IBOutlet private var loginButton: UIButton?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        loginButton?.setTitleColor(UIColor.whiteColor(), forState: .Normal)
-        loginButton?.backgroundColor = UIColor(red: 114 / 255, green: 184 / 255, blue: 37 / 255, alpha: 1)
     }
 
 }
+
+// MARK: - IntroductionPageViewController Class
+// MARK: -
 
 final class IntroductionPageViewController: UIPageViewController {
     
@@ -29,7 +27,7 @@ final class IntroductionPageViewController: UIPageViewController {
         super.viewDidLoad()
         
         dataSource = self
-        
+        // Initialize the pages should be shown
         guard let
             introPage1 = storyboard?.instantiateViewControllerWithIdentifier("IntroPage1"),
             introPage2 = storyboard?.instantiateViewControllerWithIdentifier("IntroPage2"),
@@ -40,7 +38,19 @@ final class IntroductionPageViewController: UIPageViewController {
         setViewControllers([introPage1], direction: .Forward, animated: false, completion: nil)
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let ud = NSUserDefaults.standardUserDefaults()
+        if ud.boolForKey(UserHasLoggedIn) == true {
+            dismissViewControllerAnimated(true, completion: nil)
+        }
+    }
+    
 }
+
+// MARK: - UIPageViewControllerDataSource
+// MARK: -
 
 extension IntroductionPageViewController: UIPageViewControllerDataSource {
     
