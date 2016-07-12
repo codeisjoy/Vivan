@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044DCB511D35A04800A869BF /* NetworkCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DCB501D35A04800A869BF /* NetworkCenter.swift */; };
 		045C22111D344EE900687511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C22101D344EE900687511 /* AppDelegate.swift */; };
 		045C22131D344EE900687511 /* PhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C22121D344EE900687511 /* PhotoListViewController.swift */; };
 		045C22161D344EE900687511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045C22141D344EE900687511 /* Main.storyboard */; };
@@ -14,10 +15,9 @@
 		045C221B1D344EE900687511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045C22191D344EE900687511 /* LaunchScreen.storyboard */; };
 		045C22261D344EE900687511 /* VivantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C22251D344EE900687511 /* VivantTests.swift */; };
 		045C22311D344F9700687511 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C22301D344F9700687511 /* IntroductionViewController.swift */; };
-		045C22331D34503E00687511 /* SegueIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C22321D34503E00687511 /* SegueIdentifier.swift */; };
 		045C22351D346A1700687511 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C22341D346A1700687511 /* LoginViewController.swift */; };
 		045C22371D34AD1B00687511 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C22361D34AD1B00687511 /* Post.swift */; };
-		045C22391D34C63F00687511 /* PhotoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C22381D34C63F00687511 /* PhotoListTableViewCell.swift */; };
+		045C22391D34C63F00687511 /* PhotoListTableViewAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C22381D34C63F00687511 /* PhotoListTableViewAssets.swift */; };
 		045C223B1D34F59200687511 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C223A1D34F59200687511 /* PhotoDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		044DCB501D35A04800A869BF /* NetworkCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkCenter.swift; sourceTree = "<group>"; };
 		045C220D1D344EE900687511 /* Vivant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vivant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045C22101D344EE900687511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045C22121D344EE900687511 /* PhotoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewController.swift; sourceTree = "<group>"; };
@@ -43,10 +44,9 @@
 		045C22251D344EE900687511 /* VivantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VivantTests.swift; sourceTree = "<group>"; };
 		045C22271D344EE900687511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		045C22301D344F9700687511 /* IntroductionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
-		045C22321D34503E00687511 /* SegueIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueIdentifier.swift; sourceTree = "<group>"; };
 		045C22341D346A1700687511 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		045C22361D34AD1B00687511 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		045C22381D34C63F00687511 /* PhotoListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListTableViewCell.swift; sourceTree = "<group>"; };
+		045C22381D34C63F00687511 /* PhotoListTableViewAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListTableViewAssets.swift; sourceTree = "<group>"; };
 		045C223A1D34F59200687511 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,10 +93,10 @@
 				045C22301D344F9700687511 /* IntroductionViewController.swift */,
 				045C22341D346A1700687511 /* LoginViewController.swift */,
 				045C22121D344EE900687511 /* PhotoListViewController.swift */,
-				045C22381D34C63F00687511 /* PhotoListTableViewCell.swift */,
+				045C22381D34C63F00687511 /* PhotoListTableViewAssets.swift */,
 				045C223A1D34F59200687511 /* PhotoDetailViewController.swift */,
-				045C22321D34503E00687511 /* SegueIdentifier.swift */,
 				045C22361D34AD1B00687511 /* Post.swift */,
+				044DCB501D35A04800A869BF /* NetworkCenter.swift */,
 				045C22141D344EE900687511 /* Main.storyboard */,
 				045C22171D344EE900687511 /* Assets.xcassets */,
 				045C22191D344EE900687511 /* LaunchScreen.storyboard */,
@@ -215,10 +215,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				045C22331D34503E00687511 /* SegueIdentifier.swift in Sources */,
+				044DCB511D35A04800A869BF /* NetworkCenter.swift in Sources */,
 				045C22131D344EE900687511 /* PhotoListViewController.swift in Sources */,
 				045C22311D344F9700687511 /* IntroductionViewController.swift in Sources */,
-				045C22391D34C63F00687511 /* PhotoListTableViewCell.swift in Sources */,
+				045C22391D34C63F00687511 /* PhotoListTableViewAssets.swift in Sources */,
 				045C22371D34AD1B00687511 /* Post.swift in Sources */,
 				045C22351D346A1700687511 /* LoginViewController.swift in Sources */,
 				045C223B1D34F59200687511 /* PhotoDetailViewController.swift in Sources */,
@@ -412,6 +412,7 @@
 				045C222C1D344EE900687511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		045C222D1D344EE900687511 /* Build configuration list for PBXNativeTarget "VivantTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +421,7 @@
 				045C222F1D344EE900687511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

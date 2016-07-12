@@ -105,7 +105,7 @@ final class PhotoDetailViewController: UIViewController {
     
 }
 
-// MARK: -
+// MARK: - HeartButton Class
 // MARK: -
 
 final class HeartButton: UIButton {
@@ -121,7 +121,7 @@ final class HeartButton: UIButton {
         addTarget(self, action: #selector(didTouchUpInside), forControlEvents: .TouchUpInside)
     }
     
-    // MARK: -
+    // MARK: - Private Methods
     
     @objc private func didTouchUpInside() {
         selected = !selected
