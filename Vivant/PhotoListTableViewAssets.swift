@@ -21,20 +21,15 @@ final class PhotoListTableHeaderView: UITableViewHeaderFooterView {
     
     private(set) var titleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFontOfSize(14, weight: UIFontWeightBold)
+        label.font = UIFont.boldSystemFontOfSize(14)
         return label
-    }()
-    
-    private var stackView: UIStackView = {
-        let view = UIStackView()
-        view.axis = .Horizontal
-        view.spacing = 6
-        return view
     }()
     
     private var effectView: UIVisualEffectView = {
         let effect = UIBlurEffect(style: .ExtraLight)
-        return UIVisualEffectView(effect: effect)
+        let view = UIVisualEffectView(effect: effect)
+        view.layoutMargins = UIEdgeInsets(top: 0, left: 12, bottom: 0, right: 12)
+        return view
     }()
     
     // MARK: - Overriden Methods
@@ -44,14 +39,8 @@ final class PhotoListTableHeaderView: UITableViewHeaderFooterView {
         
         contentView.addSubview(effectView)
         
-        stackView.layoutMargins = UIEdgeInsets(top: 12, left: 12, bottom: 50, right: 12)
-        stackView.layoutMarginsRelativeArrangement = true
-        
-        stackView.addArrangedSubview(imageView)
-        stackView.addArrangedSubview(titleLabel)
-        effectView.contentView.addSubview(stackView)
-        
-        imageView.setContentHuggingPriority(UILayoutPriorityDefaultLow + 1, forAxis: .Horizontal)
+        effectView.contentView.addSubview(imageView)
+        effectView.contentView.addSubview(titleLabel)
         
         backgroundView = UIView()
     }
@@ -62,9 +51,13 @@ final class PhotoListTableHeaderView: UITableViewHeaderFooterView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
         effectView.frame = bounds
-        stackView.frame = effectView.bounds
+        
+        let rect = UIEdgeInsetsInsetRect(effectView.bounds, effectView.layoutMargins)
+        let imageViewSize = imageView.sizeThatFits(rect.size)
+        let tmp = rect.divide(imageViewSize.width, fromEdge: .MinXEdge)
+        imageView.frame = tmp.slice
+        titleLabel.frame = tmp.remainder.insetBy(dx: 6, dy: 0)
     }
     
 }
